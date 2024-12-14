@@ -1,0 +1,112 @@
+@import '../media', '../mixins';
+
+.menu {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 30px 30px 20px 23px;
+    background-color: var(--color-light);
+
+    @include desktop {
+        display: none;
+    }
+
+    &__search {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 37px;
+    }
+
+
+    &__nav {
+        flex: 1;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+    }
+
+    .item-active {
+        position: relative;
+        color: var(--color-gray-alt);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -23px;
+            border-radius: 2px;
+            background: var(--color-light-green);
+            width: 4px;
+            height: 28px;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+.feedback {
+
+    &__buttons {
+        column-gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__email--link {
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 12px;
+
+    }
+
+    &__number--link {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        margin-bottom: 40px;
+    }
+}
+
+.lang {
+    display: flex;
+    column-gap: 7px;
+
+    
+    &__ru {
+    @include hover {
+            color: var(--color-purple);
+            cursor: pointer;
+        }
+    }
+
+    &__en {
+    @include hover {
+            color: var(--color-purple);
+            cursor: pointer;
+        }
+    }
+
+    &__cn {
+    @include hover {
+            color: var(--color-purple);
+            cursor: pointer;
+        }
+    }
+}
+
+.main-container {
+    @include desktop-above {
+        max-width: 1440px;
+        display: grid;
+        grid-template-columns: 305px 1fr
+    }
+    
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header flex">
+        <button class="header__burger purple-button" type="button">
+          <img src="./img/burger.svg" alt="" />
+        </button>
+        <div class="header__center flex">
+          <a class="header__logo-link" href="#">
+            <img src="./img/logo.svg" alt="" />
+          </a>
+          <div class="header__center-feedback">
+            <button class="header__center-phone purple-button" type="button">
+              <img src="./img/telephone.svg" alt="Call" />
+            </button>
+            <button class="header__center-chat purple-button" type="button">
+              <img src="./img/chat.svg" alt="Chat" />
+            </button>
+            <button class="header__center-user purple-button" type="button">
+              <img src="./img/user.svg" alt="User" />
+            </button>
+          </div>
+        </div>
+        <div class="header__callback">
+          <button
+            class="header__callback--button purple-button bid"
+            type="button"
+          >
+            <img src="./img/tools.svg" alt="tools" />
+          </button>
+          <button
+            class="header__callback--button purple-button status"
+            type="button"
+          >
+            <img src="./img/search.svg" alt="search" />
+          </button>
+        </div>
+      </header>
+      <div class="main-container">
+        <aside class="menu flex">
+          <div class="menu__search flex">
+            <a class="menu__search-logo" href="#">
+              <img src="./img/logo.svg" alt="" />
+            </a>
+            <button class="menu__search--button purple-button" type="button">
+              <img src="./img/search-menu.svg" alt="Search" />
+            </button>
+          </div>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Ремонт техники
+                </a>
+              </li>
+              <li class="menu__item item-active">
+                <a href="#" class="menu__link">
+                  Услуги и сервисы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Корпоративным клиентам
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Продавцам техники
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Партнерам
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Производителям
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Наши сервисные центры
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Контакты
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__feedback feedback">
+            <div class="feedback__buttons flex">
+              <button class="feedback__button purple-button" type="button">
+                <img src="./img/telephone.svg" alt="phone">
+              </button>
+              <button class="feedback__button purple-button" type="button">
+                <img src="./img/chat.svg" alt="phone">
+              </button>
+              <button class="feedback__button purple-button" type="button">
+                <img src="./img/user.svg" alt="phone">
+              </button>
+            </div>
+            <div class="feedback__email">
+              <a href="mailto:mail@cps.com" class="feedback__email--link">mail@cps.com</a>
+            </div>
+            <div class="feedback__number">
+              <a href="tel:+78008908900" class="feedback__number--link">8 800 890 8900</a>
+            </div>
+            <div class="lang flex">
+              <div class="lang__ru">RU</div>
+              <div class="lang__en">EN</div>
+              <div class="lang__cn">CN</div>
+            </div>
+          </div>
+        </aside>
+        <main class="main">
+          <section class="services">
+            <div class="services__title title flex">
+              <h1 class="title__text">
+                Услуги и сервисы
+              </h1>
+              <div class="title__feedback flex">
+                <div class="title__button flex">
+                  <span class="title__button-text">Оставить заявку</span>
+                  <div class="purple-button">
+                    <img src="./img/tools.svg" alt="Оставить заявку">
+                  </div>
+                </div>
+                <div class="title__button flex">
+                  <span class="title__button-text">Оставить заявку</span>
+                  <div class="purple-button">
+                    <img src="./img/search.svg" alt="Оставить заявку">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <ul class="services__list flex">
+              <li class="services__item">
+                <a href="#" class="services__link">
+                  Ремонтируемые бренды
+                </a>
+              </li>
+              <li class="services__item">
+                <a href="#" class="services__link">
+                  Дополнительные услуги
+                </a>
+              </li>
+              <li class="services__item">
+                <a href="#" class="services__link">
+                  Цены на услуги
+                </a>
+              </li>
+              <li class="services__item">
+                <a href="#" class="services__link">
+                  Адреса сервисных центров
+                </a>
+              </li>
+              <li class="services__item">
+                <a href="#" class="services__link">
+                  Специальные цены
+                </a>
+              </li>
+              <li class="services__item">
+                <a href="#" class="services__link">
+                  Отзывы
+                </a>
+              </li>
+            </ul>
+            <div class="services__info">
+              <div class="services__info--left">
+                <div class="services__info--text">
+                  <p>
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                  </p>
+                  <p>
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                  </p>
+                  <p>
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                  </p>
+                </div>
+                <button class="services__info--button">
+                  Читать далее
+                </button>
+              </div>
+              <div class="services__info--right">
+                <div class="services__info--image">
+                  <img src="./img/cps-image.png" alt="CPS">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

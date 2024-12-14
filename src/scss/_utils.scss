@@ -1,0 +1,47 @@
+@import './media','./mixins','./variables.scss';
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+.main-container {
+    max-width: 1440px
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+.hidden-mobile{
+    @include mobile {
+        display: none !important; 
+    }
+}
+
+.visible-mobile{
+    @include mobile-above {
+        display: none !important; 
+    }
+}
+
+.flex {
+    display: flex;
+
+    &-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main {
+    @include desktop {
+        max-width: 1439px;
+        width: 100%;
+    }
+}

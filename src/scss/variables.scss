@@ -1,0 +1,20 @@
+@import './mixins', './media';
+
+:root {
+    --color-dark: #1B1C21;
+    --color-dark-alt: #292A32;
+    --color-light: #FFFFFF;
+    --color-light-green: #41F6D7;
+    --color-gray-dashes: #EAEAEA;
+    --color-gray: #F8F8F8;
+    --color-gray-alt: #7E7E82;
+    --color-purple: #FF3E79;
+    --color-light-green-alt: #B8FFEC;
+
+    --font-family-base: 'TT Lakes';
+
+    --container-width: 1140px;
+    --container-padding-x: 20px;
+
+    --transition-duration: 0.2s;
+}
