@@ -1,0 +1,82 @@
+@import '../media', '../mixins';
+
+.repair {
+    padding-top: 0;
+    &__title {}
+
+    &__container {}
+
+    &__list.swiper-wrapper {
+        column-gap: 16px;
+        @include mobile-above {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 16px;
+            column-gap: 24px;
+            padding-bottom: 24px;
+            overflow: hidden;
+        }
+
+        @include desktop-above {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        box-sizing: border-box;
+        border: 1px solid rgb(234, 234, 234);
+        border-radius: 6px;  
+        background: var(--color-light);
+
+        @include mobile-above {
+            max-width: 224px;
+        }
+    }
+
+    &__link {
+        min-width: 240px;
+        min-height: 160px;
+        padding: 16px;
+        position: relative;
+
+        @include mobile-above {
+            min-width: 224px;
+        }
+    }
+}
+.repair__hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important
+}
+
+.title {
+
+    &__text {}
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.link {
+
+    &__text {}
+
+    &__arrow {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;    
+    }
+}
+
+.swiper-pagination {}

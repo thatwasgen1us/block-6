@@ -1,7 +1,6 @@
 @import '../media', '../mixins';
 
 .services {
-    
     @include desktop {
         position: relative;
         top: 70px;
@@ -9,7 +8,29 @@
         width: 100%;
     }
 
+    &__title {
+        justify-content: space-between;
+        position: relative;
 
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -37.5px;
+            border-radius: 2px;
+            background: var(--color-light-green);
+            width: 4px;
+            height: 40px;
+
+            @include desktop {
+                left: -24px;
+            }
+
+            @include mobile {
+                left: -16px;
+            }
+        }
+    }
     &__list {
         column-gap: 5px;
         flex-wrap: wrap;

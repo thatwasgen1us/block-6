@@ -4,9 +4,8 @@ import 'swiper/swiper.scss'
 import 'swiper/modules/pagination.scss'
 
 function initSwiper() {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.brands__container', {
     modules: [Navigation, Pagination],
-    spaceBetween: 16,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
@@ -14,19 +13,15 @@ function initSwiper() {
     breakpoints: {
       320: {
         slidesPerView: 1.2,
-        spaceBetween: 16
       },
       420: {
         slidesPerView: 1.5,
-        spaceBetween: 16
       },
       530: {
         slidesPerView: 2,
-        spaceBetween: 16
       },
       650: {
         slidesPerView: 2.5,
-        spaceBetween: 16
       }
     }
   })
