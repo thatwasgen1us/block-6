@@ -1,19 +1,14 @@
 @import '../media', '../mixins';
 
 .services {
-    padding: 42px 30px 30px 34px;
     
     @include desktop {
         position: relative;
         top: 70px;
         max-width: 1439px;
         width: 100%;
-        padding-inline: 24px;
     }
 
-    @include mobile {
-        padding-inline: 16px;
-    }
 
     &__list {
         column-gap: 5px;
@@ -86,25 +81,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: normal;
-        }
-    }
-
-    &__info--button {
-        position: relative;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        padding-left: 30px;
-        margin-bottom: 16px;
-
-        @include hover {
-            color: var(--color-purple);
-        }
-
-        &::before {
-            content: url(../../img/two-arrows-bottom.svg);
-            position: absolute;
-            left: 0;
         }
     }
 

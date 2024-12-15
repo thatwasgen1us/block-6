@@ -5,8 +5,13 @@
     margin: 0 auto;
 }
 .container {
-    max-width: 1120px;
-    margin-inline: auto;
+    max-width: 1440px;
+
+    @include desktop-above {
+        max-width: 1120px;
+        margin-inline: auto;
+    }
+    
 }
 
 .main-container {
@@ -44,4 +49,39 @@
         max-width: 1439px;
         width: 100%;
     }
+}
+
+.padding-container {
+    padding: 42px 30px 30px 30px;
+    
+    @include desktop {
+        padding-inline: 24px;
+    }
+
+    @include mobile {
+        padding-inline: 16px;
+    }
+}
+
+.section-button {
+    position: relative;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding-left: 30px;
+    margin-bottom: 16px;
+
+    @include hover {
+        color: var(--color-purple);
+    }
+
+    &::before {
+        content: url(../img/two-arrows-bottom.svg);
+        position: absolute;
+        left: 0;
+    }
+}
+
+.open {
+    max-height: 100% !important;
 }

@@ -9,5 +9,7 @@ import '../scss/purple-button.scss'
 import '../scss/blocks/header.scss'
 import '../scss/blocks/menu.scss'
 import '../scss/blocks/services.scss'
+import '../scss/blocks/brands.scss'
 
-console.log('Works!')
+const swiper = require('./swiper.js')
+const hiddenElement = require('./hiddenElements.js')

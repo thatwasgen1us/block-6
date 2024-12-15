@@ -1,0 +1,107 @@
+@import '../media', '../mixins';
+
+.brands {
+    margin-top: 20px;
+
+    @include desktop-above {
+        margin-top: 0;
+    }
+    
+    &__title {}
+
+    &__container {}
+
+    &__list.swiper-wrapper {
+        @include mobile-above {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 24px;
+            row-gap: 16px;
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        @include desktop-above {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        max-width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-gray-dashes);
+        border-radius: 6px;
+        background: var(--color-light);
+
+        &.swiper-slide {
+            @include mobile-above {
+                max-width: 224px !important;
+            }
+
+            @include desktop-above {
+                max-width: 240px !important;
+            }
+        }
+
+    }
+
+    &__link {
+        min-width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+        padding-inline: 16px;
+
+        @include mobile-above {
+            min-width: 194px;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+.title {
+    display: flex;
+    margin-inline: -24px;
+    padding-inline: 24px;
+    margin-bottom: 24px;
+    height: 56px;
+    background-color: var(--color-light);
+    
+    @include mobile {
+        height: 80px;
+    }
+
+    & h2 {
+        color: var(--color-gray-alt);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+    }   
+    
+    &__text {}
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+
+    @include mobile-above {
+        display: none;
+    }
+}
+
+.swiper-slide {
+    max-width: 240px;
+}
+
