@@ -12,6 +12,14 @@
         justify-content: space-between;
         position: relative;
 
+        @include desktop {
+            margin-bottom: 32px;
+        }
+
+        @include mobile {
+            margin-bottom: 24px;
+        }
+
         &::before {
             content: '';
             position: absolute;

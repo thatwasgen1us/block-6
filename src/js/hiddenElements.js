@@ -49,7 +49,6 @@ btnHideText.addEventListener('click', function () {
 
 let repairButton = document.querySelector('.repair__button')
 let repairItems = document.querySelectorAll('.repair__item')
-let brandsHidden = document.querySelectorAll('.repair__hidden')
 
 if (document.documentElement.clientWidth > 1120) {
   for (let i = 4; i < repairItems.length; i++) {
@@ -64,6 +63,8 @@ if (document.documentElement.clientWidth > 1120) {
   }
 }
 
+let brandsHidden = document.querySelectorAll('.repair__hidden')
+
 repairButton.addEventListener('click', function () {
   if (repairButton.classList.contains('hide')) {
     brandsHidden.forEach((element) => {
@@ -71,11 +72,13 @@ repairButton.addEventListener('click', function () {
     })
     repairButton.textContent = 'Показать всё'
     repairButton.classList.remove('hide')
+    console.log(brandsHidden)
   } else {
     brandsHidden.forEach((element) => {
       element.classList.remove('repair__hidden')
     })
     repairButton.textContent = 'Скрыть'
     repairButton.classList.add('hide')
+    console.log(brandsHidden)
   }
 })

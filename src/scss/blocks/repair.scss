@@ -2,9 +2,6 @@
 
 .repair {
     padding-top: 0;
-    &__title {}
-
-    &__container {}
 
     &__list.swiper-wrapper {
         column-gap: 16px;
@@ -28,8 +25,17 @@
         border-radius: 6px;  
         background: var(--color-light);
 
+        @include hover {
+            transform: translateY(2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
         @include mobile-above {
             max-width: 224px;
+        }
+
+        @include desktop-above {
+            max-width: 240px;
         }
     }
 
@@ -42,8 +48,19 @@
         @include mobile-above {
             min-width: 224px;
         }
+
+        @include desktop-above {
+            min-width: 240px;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            display: none;
+        }
     }
 }
+
 .repair__hidden {
     position: absolute !important;
     width: 1px !important;
@@ -57,26 +74,10 @@
     overflow: hidden !important
 }
 
-.title {
-
-    &__text {}
-}
-
-.swiper {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
 .link {
-
-    &__text {}
-
     &__arrow {
         position: absolute;
         bottom: 16px;
         right: 16px;    
     }
 }
-
-.swiper-pagination {}

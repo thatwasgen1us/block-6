@@ -9,11 +9,13 @@
     }
     
     &__list.swiper-wrapper {
+        column-gap: 16px;
+        
         @include mobile-above {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            column-gap: 24px;
             row-gap: 16px;
+            column-gap: 24px;
             padding-bottom: 24px;
             overflow: hidden;
         }

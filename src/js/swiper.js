@@ -4,7 +4,7 @@ import 'swiper/swiper.scss'
 import 'swiper/modules/pagination.scss'
 
 function initSwiper() {
-  const swiper = new Swiper('.brands__container', {
+  const swiper = new Swiper('.swiper', {
     modules: [Navigation, Pagination],
     pagination: {
       el: '.swiper-pagination',
@@ -12,16 +12,16 @@ function initSwiper() {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.2,
+        slidesPerView: 1.2
       },
       420: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.5
       },
       530: {
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       650: {
-        slidesPerView: 2.5,
+        slidesPerView: 2.5
       }
     }
   })
