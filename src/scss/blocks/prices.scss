@@ -1,0 +1,129 @@
+@import '../media', '../mixins';
+
+.prices {
+
+    &__cards-mobile {
+        margin-bottom: 8px;
+
+        @include mobile-above {
+            display: none!important;
+        }
+    }
+
+    &__cards-desktop {
+        display: none;
+
+
+        @include mobile-above {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 28px;
+        }
+
+        &--title {
+            display: grid;
+            grid-template-columns: minmax(395px, 1fr) minmax(90px, 1fr) minmax(81px, 1fr) minmax(119px, 1fr);
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        &--values {
+            display: grid;
+            min-width: 720px;
+            min-height: 324px;
+            justify-content: center;
+            align-items: center;
+            grid-template: repeat(5, minmax(64px, 1fr)) / minmax(395px, 1fr) minmax(80px, 1fr) minmax(81px, 1fr) minmax(119px, 1fr);
+            border-radius: 6px;
+            background-color: var(--color-dashes);
+            white-space: nowrap;
+            row-gap: 1px;
+
+            & > div {
+                background-color: var(--color-light);
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding-inline: 16px;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__list {
+        column-gap: 16px;
+    }
+
+    &__item {
+        min-width: 260px;
+        min-height: 200px;
+        padding: 16px;
+        border-radius: 6px;
+        background: var(--color-light);
+        position: relative;
+        display: flex!important;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__text--top {
+        @include flex-column;
+    }
+
+    &__text--center {
+        @include flex-column;
+    }
+
+    &__text--bottom {
+        @include flex-column;
+    }
+
+    &__subscription {
+        margin-bottom: 16px;
+    }
+
+    &__button-offer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        white-space: nowrap;
+        padding: 0;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+        @include hover {
+            color: var(--color-purple);
+        }
+    }
+}
+
+
+.buy-button {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    background: var(--color-purple);
+    color: var(--color-light);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+
+    @include mobile {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+.swiper-pagination {
+    position: relative!important;
+}

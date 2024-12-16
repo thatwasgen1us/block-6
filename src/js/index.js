@@ -11,6 +11,7 @@ import '../scss/blocks/menu.scss'
 import '../scss/blocks/services.scss'
 import '../scss/blocks/brands.scss'
 import '../scss/blocks/repair.scss'
+import '../scss/blocks/prices.scss'
 
 const swiper = require('./swiper.js')
 const hiddenElement = require('./hiddenElements.js')
