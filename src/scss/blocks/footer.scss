@@ -1,0 +1,79 @@
+@import '../media', '../mixins';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    opacity: 0.72;
+    padding-top: 0;
+    margin-top: 42px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-alt);
+    
+    @include mobile {
+        padding-inline: 4px;
+    }
+
+    @include mobile-above {
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 35px;
+        align-items: flex-start;
+
+        & > div {
+            width: 215px;
+        }
+    }
+
+    @include desktop-above {
+        justify-content: space-between;
+    }
+
+    &__team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: TT Lakes;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: right;
+
+        @include mobile-above {
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+
+    &__politics p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: right;
+    }
+
+    &__info {
+        @include desktop-above {
+            min-width: 330px;
+        }
+
+        & p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: right;
+
+        @include mobile-above{
+            text-align: right;
+        }
+
+    }
+        
+    }
+}

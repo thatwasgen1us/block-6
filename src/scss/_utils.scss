@@ -88,5 +88,8 @@
 
 .text-gray {
     opacity: 0.72;
-    padding-inline: 16px;
+    @include mobile-above{
+        padding-inline: 16px;
+    }
+    
 }

@@ -12,6 +12,9 @@ import '../scss/blocks/services.scss'
 import '../scss/blocks/brands.scss'
 import '../scss/blocks/repair.scss'
 import '../scss/blocks/prices.scss'
+import '../scss/blocks/footer.scss'
 
 const swiper = require('./swiper.js')
 const hiddenElement = require('./hiddenElements.js')
+
+const activeMenu = require('./activeMenu.js')
