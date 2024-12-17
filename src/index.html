@@ -20,10 +20,10 @@
             <img src="./img/logo.svg" alt="" />
           </a>
           <div class="header__center-feedback">
-            <button class="header__center-phone purple-button" type="button">
+            <button class="header__center-phone purple-button callback-chat-header" type="button">
               <img src="./img/telephone.svg" alt="Call" />
             </button>
-            <button class="header__center-chat purple-button" type="button">
+            <button class="header__center-chat purple-button feedback-chat-header" type="button">
               <img src="./img/chat.svg" alt="Chat" />
             </button>
             <button class="header__center-user purple-button" type="button">
@@ -107,10 +107,10 @@
               </nav>
               <div class="menu__feedback feedback">
                 <div class="feedback__buttons flex">
-                  <button class="feedback__button purple-button" type="button">
+                  <button class="feedback__button purple-button callback-chat-aside" type="button">
                     <img src="./img/telephone.svg" alt="phone">
                   </button>
-                  <button class="feedback__button purple-button" type="button">
+                  <button class="feedback__button purple-button feedback-chat-aside" type="button">
                     <img src="./img/chat.svg" alt="phone">
                   </button>
                   <button class="feedback__button purple-button" type="button">
@@ -592,6 +592,72 @@
             </div>
           </footer>
         </main>
+      </div>
+    </div>
+    <div class="feedback-modal">
+      <div class="feedback-menu">
+         <div class="feedback-modal__close">
+        <button class="feedback-modal__close--button purple-button">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+        <div class="feedback-menu__title">
+          Обратная связь
+        </div>
+        <div class="feedback-menu__name ">
+            <label class="visually-hidden" for="username" >Имя</label>
+            <input class="feedback-menu__input" type="text" id="username" name="username" required placeholder="Имя">
+        </div>
+        <div class="feedback-menu__number">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input class="feedback-menu__input" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+        </div>
+        <div class="feedback-menu__email">
+            <label class="visually-hidden" for="email">Электронная почта:</label>
+            <input class="feedback-menu__input" type="email" id="email" name="email" required placeholder="Электронная почта">
+        </div>
+        <div class="feedback-menu__form-group">
+            <label class="visually-hidden" for="comments">Сообщение:</label>
+            <textarea class="feedback-menu__input textarea" id="comments" name="comments" placeholder="Сообщение"></textarea>
+        </div>
+        <div class="feedback-menu__agreement">
+          <p>
+            Нажимая “отправить”, вы даете согласие на <a class="purple-link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="purple-link" href="#">политикой конфиденциальности</a>
+          </p>
+        </div>
+        <div class="feedback-menu__button-block">
+          <button class="feedback-menu__button buy-button">
+            Отправить
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="callback-modal">
+      <div class="callback-menu">
+         <div class="callback-modal__close">
+        <button class="callback-modal__close--button purple-button">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+        <div class="callback-menu__title">
+          Заказать звонок
+        </div>
+        <div class="callback-menu__number">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input class="callback-menu__input" type="tel" id="phoneCallback" name="phone" placeholder="Телефон" required>
+        </div>
+        <div class="callback-menu__agreement">
+          <p>
+            Нажимая “отправить”, вы даете согласие на <a class="purple-link" href="#">обработку персональных данных</a> и соглашаетесь с нашей <a class="purple-link" href="#">политикой конфиденциальности</a>
+          </p>
+        </div>
+        <div class="callback-menu__button-block">
+          <button class="callback-menu__button buy-button">
+            Отправить
+          </button>
+        </div>
       </div>
     </div>
   </body>

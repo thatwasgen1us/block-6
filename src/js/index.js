@@ -13,6 +13,8 @@ import '../scss/blocks/brands.scss'
 import '../scss/blocks/repair.scss'
 import '../scss/blocks/prices.scss'
 import '../scss/blocks/footer.scss'
+import '../scss/blocks/feedback-modal.scss'
+import '../scss/blocks/callback-modal.scss'
 
 const swiper = require('./swiper.js')
 const hiddenElement = require('./hiddenElements.js')

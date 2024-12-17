@@ -1,12 +1,12 @@
 let btn = document.querySelector('.brands__button')
 let items = document.querySelectorAll('.brands__item')
 
-if (document.documentElement.clientWidth > 1120) {
+if (document.documentElement.clientWidth > 1440) {
   for (i = 8; i < items.length; i++) {
     items[i].classList.add('visually-hidden')
   }
 } else if (
-  document.documentElement.clientWidth <= 1120 &&
+  document.documentElement.clientWidth <= 1440 &&
   document.documentElement.clientWidth > 767
 ) {
   for (i = 6; i < items.length; i++) {
@@ -50,12 +50,12 @@ btnHideText.addEventListener('click', function () {
 let repairButton = document.querySelector('.repair__button')
 let repairItems = document.querySelectorAll('.repair__item')
 
-if (document.documentElement.clientWidth > 1120) {
+if (document.documentElement.clientWidth > 1440) {
   for (let i = 4; i < repairItems.length; i++) {
     repairItems[i].classList.add('repair__hidden')
   }
 } else if (
-  document.documentElement.clientWidth <= 1120 &&
+  document.documentElement.clientWidth <= 1440 &&
   document.documentElement.clientWidth > 767
 ) {
   for (let i = 3; i < repairItems.length; i++) {
